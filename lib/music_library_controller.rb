@@ -19,5 +19,10 @@ class MusicLibraryController
     call unless input == "exit"
   end
 
+  def list_songs
+    song_list = Song.all.collect {|song| song.name}.sort
+  end
+     
+
 
 end
