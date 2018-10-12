@@ -53,7 +53,7 @@ class MusicLibraryController
     count = 1
     if artist
       songs = artist.songs.sort_by {|song| song.name}
-      song.each do |song|
+      songs.each do |song|
         puts "#{count}. #{song.name} - #{song.genre.name}"
         count += 1
       end
