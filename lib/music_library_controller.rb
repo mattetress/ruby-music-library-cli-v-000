@@ -37,6 +37,15 @@ class MusicLibraryController
     end
   end
 
+  def list_genres
+    genre_list = Genre.all.sort_by {|genre| genre.name}
+    count = 1
+    genre_list.each do |genre|
+      puts "#{count}. #{genre.name}"
+      count += 1
+    end
+  end
+
 
 
 end
