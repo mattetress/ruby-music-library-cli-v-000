@@ -25,6 +25,13 @@ class Artist
     artist
   end
 
+  def add_song(song)
+    self.songs << song unless self.songs.detect {|a| a.name == song}
+    song.artist = self unless song.artist 
+    
+  end
+
+  
 
 
 end
