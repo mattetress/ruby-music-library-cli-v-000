@@ -21,8 +21,13 @@ class MusicLibraryController
 
   def list_songs
     song_list = Song.all.collect {|song| song.name}.sort
+    count = 1
+    song_list.each do |song|
+      puts "#{count}. #{song}"
+      count += 1
+    end
   end
-     
+
 
 
 end
