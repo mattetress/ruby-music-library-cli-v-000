@@ -14,4 +14,13 @@ class Song
     self.all.clear
   end
 
+  def save
+    self.class.all << self
+  end
+
+  def self.create(name)
+    self.all << self.new(name)
+  end
+    
+
 end
