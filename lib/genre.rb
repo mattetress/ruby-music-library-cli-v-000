@@ -6,15 +6,15 @@ class Genre
     @name = name
   end
 
-  def self.all 
-    @@all 
+  def self.all
+    @@all
   end
 
   def self.destroy_all
     self.all.clear
   end
 
-  def save 
+  def save
     self.class.all << self
   end
 
@@ -24,5 +24,5 @@ class Genre
     genre
   end
 
-  
+
 end
