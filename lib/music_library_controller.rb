@@ -62,7 +62,7 @@ class MusicLibraryController
 
   def list_songs_by_genre
     puts "Please enter a genre:"
-    
+
   end
 
 
